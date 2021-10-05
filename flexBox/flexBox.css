@@ -1,0 +1,57 @@
+/* 
+display: flex - inicia o flex do conteiner sendo colocado no elemento pai. 
+
+flex-grow - da tamanho aos elementos de forma proporcional 
+Ex: flex-grow: 1;
+
+flex-shrink - o contrario do grow, vai diminuir os elementos
+flex-basics - tamanho inicial do elemento e o restante e preenchido pelo grow. 
+flex- shorthend - flex: <grow> <shrink> <basics>
+flex-direction - muda a direção dos elementos entre ( row ou  column )
+flex- order - mudar em que ordem os elementos deve ficar de forma individual
+justify-content: center; alinha os elementos se movimentando em linhas row 
+align-items: center; alinha os elementos se movimentando em colunas columm 
+/* align-self: flex-start;  Propriedade que alinha um item por vez na vertical */
+
+*/
+
+
+
+body {
+    background-color: gray;  
+}
+
+.container {
+    display: flex;
+    height: 300px;
+    width: 100%;
+    background-color: #fff;
+    justify-content: center; /* se movimenta em linhas row */
+    align-items: center;  /* se movimenta em colunas columm */
+    gap: 5px;
+    
+}
+
+
+.box {
+height: 100px;
+width: 100px;
+/* flex: 1 1 auto; */
+ /* flex: <grow> <shrink> <basics>  */
+}
+
+
+.first {
+background-color: red;
+}
+
+.second {
+background-color: orange;
+
+}
+
+
+.third {
+background-color: green;
+align-self: flex-start;
+}
